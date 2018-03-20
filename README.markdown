@@ -13,9 +13,4 @@ follows to allow automatic downloading:
 
     import "github.com/glenn-brown/golang-pkg-pcre/src/pkg/pcre"
 
-This is a clone of
-[golang-pkg-pcre](http://git.enyo.de/fw/debian/golang-pkg-pcre.git)
-by Florian Weimer, which has been placed on github so it can be fetched by
-Go's automatic package installer.  The `FindIndex()` and `ReplaceAll()`
-functions were added by Glenn Brown, to mimic functions in Go's default
-regexp package.
+This is based off of previous work by Florian Weimer and Glenn Brown. It adds `BReset()` which gives back the boolean result when resetting a Matcher. It also adds convenience methods for retrieving the left index and right index of a match `LIndex()` and `RIndex()` respectively.
